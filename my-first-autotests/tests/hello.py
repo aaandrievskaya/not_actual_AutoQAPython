@@ -1,3 +1,4 @@
+'''
 import random
 
 a = random.randint(0, 10)
@@ -19,3 +20,9 @@ else:
             print("Great!!")
         else:
             print("Loser!!!!!")
+
+'''
+
+import requests
+response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
+print(response.status_code)
